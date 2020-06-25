@@ -9,6 +9,8 @@ const newScene = () => {
 
 const newCamera = () => {
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+  camera.position.x = 100
+  camera.position.y = 100
   camera.position.z = 400
   return camera
 }
@@ -37,7 +39,7 @@ const BaseScene = () => {
     const renderer = newRenderer(mount)
 
     // mesh
-    const geometry = new THREE.BoxGeometry(20, 20, 20)
+    const geometry = new THREE.BoxGeometry(50, 50, 50)
     const material = new THREE.MeshNormalMaterial()
     const mesh = new THREE.Mesh(geometry, material)
     scene.add(mesh)
