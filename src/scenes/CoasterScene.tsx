@@ -254,20 +254,20 @@ const CoasterScene = () => {
     <>
       <div className="absolute z-10 w-full h-full">
         <div className="flex justify-center mt-32">
-          <span className="font-serif text-gray-600 text-4xl">This is text message.</span>
+          <span className="text-gray-600 text-4xl">This is a 3D Scene template.</span>
         </div>
         <div className="border-solid border border-gray-600 mx-8 lg:max-w-3xl lg:mx-auto" />
         <div className="flex justify-center mt-10">
-          <span className="font-serif font-bold text-gray-600 lg:text-2xl">no matter who you are</span>
+          <span className="font-serif font-bold text-gray-600 lg:text-2xl">You can quickly make your site</span>
         </div>
         <div className="flex justify-center mt-4">
-          <span className="font-serif font-bold text-gray-600 lg:text-2xl">no matter how old you are</span>
+          <span className="font-serif font-bold text-gray-600 lg:text-2xl">by using modern tech stack such as </span>
         </div>
         <div className="flex justify-center mt-4">
-          <span className="font-serif font-bold text-gray-600 lg:text-2xl">no matter what you do</span>
+          <span className="font-serif font-bold text-gray-600 lg:text-2xl">Gatsby, Three.js, TypeScript</span>
         </div>
         <div className="flex justify-center mt-12">
-          <span className="font-serif font-bold text-gray-600 lg:text-2xl">There is a way you go</span>
+          <span className="font-serif font-bold text-gray-600 lg:text-2xl">Let's start to create your own portfolio.</span>
         </div>
       </div>
       <div css={css``} ref={mount} />
