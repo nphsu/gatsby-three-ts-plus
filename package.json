@@ -1,11 +1,15 @@
 {
-  "name": "gatsby-starter-typescript-plus",
-  "description": "A starter kit for TypeScript-based Gatsby projects with sensible defaults.",
+  "name": "gatsby-three-ts-plus",
+  "description": "A starter kit for Three.js scenes using a TypeScript-based Gatsby framework with emotion and tailwindcss.",
   "version": "1.0.0",
   "private": true,
-  "author": "Resi Respati <resir014@gmail.com>",
+  "author": "Shumpei Koike <https://twitter.com/shunpei42ba_>",
   "keywords": [
-    "gatsby"
+    "three.js", 
+    "typescript", 
+    "gatsby", 
+    "emotion", 
+    "tailwindcss"
   ],
   "license": "MIT",
   "main": "n/a",
@@ -33,8 +37,10 @@
     "gatsby-image": "^2.2.1",
     "gatsby-plugin-canonical-urls": "^2.1.0",
     "gatsby-plugin-emotion": "^4.3.4",
+    "gatsby-plugin-offline": "^3.2.13",
     "gatsby-plugin-postcss": "^2.3.4",
     "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-robots-txt": "^1.5.1",
     "gatsby-plugin-sharp": "^2.2.1",
     "gatsby-plugin-typescript": "^2.1.0",
     "gatsby-remark-copy-linked-files": "^2.1.0",
