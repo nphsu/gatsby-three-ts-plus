@@ -8,9 +8,12 @@ import Container from './Container'
 
 const StyledHeader = styled.header`
   height: ${heights.header}px;
+  width: 100%;
   padding: 0 ${dimensions.containerPadding}rem;
   background-color: ${colors.brand};
   color: ${transparentize(0.5, colors.white)};
+  opacity: 0.5;
+  position: absolute;
 `
 
 const HeaderInner = styled(Container)`

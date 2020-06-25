@@ -5,16 +5,12 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 
-import BaseScene from '../scenes/BaseScene'
+import CoasterScene from '../scenes/CoasterScene'
 
 const IndexPage = () => (
-  // <IndexLayout>
-  //   <Page>
-  //     <Container>
-  <BaseScene />
-  //     </Container>
-  //   </Page>
-  // </IndexLayout>
+  <IndexLayout>
+    <CoasterScene />
+  </IndexLayout>
 )
 
 export default IndexPage
