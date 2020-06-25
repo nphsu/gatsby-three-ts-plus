@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'gatsby-three-ts-plus',
-    description: 'A starter kit for Three.js scenes using a TypeScript-based Gatsby framework with emotion and tailwindcss.',
+    description: '3D web starter kit with Three.js and TypeScript.',
     keywords: 'three.js, typescript, gatsbyjs, gatsby, emotion, tailwindcss',
     siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
     author: {
