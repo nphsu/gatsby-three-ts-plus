@@ -36,14 +36,18 @@ const BaseScene = () => {
     // renderer
     const renderer = newRenderer(mount)
 
+    // mesh
     const geometry = new THREE.BoxGeometry(20, 20, 20)
     const material = new THREE.MeshNormalMaterial()
     const mesh = new THREE.Mesh(geometry, material)
     scene.add(mesh)
 
+    // render
     const render = () => {
       renderer.render(scene, camera)
     }
+
+    // animation
     const animate = () => {
       requestAnimationFrame(animate)
       render()
