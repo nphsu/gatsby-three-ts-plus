@@ -4,20 +4,21 @@
   </a>
 </p>
 <h1 align="center">
-  gatsby-starter-typescript-plus
+  gatsby-three-ts-plus
 </h1>
 
-> A starter kit for TypeScript-based Gatsby projects with sensible defaults.
+> 3D web starter kit with Three.js and TypeScript.
 
-This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites written in TypeScript. It includes the bare essentials for you to get started (styling, Markdown parsing, minimal toolset).
+This is a 3D web starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites written in TypeScript. 3D scenes are expressed by a pure Three.js library. It includes the bare essentials for you to get started (styling, minimal toolset).
 
 ## 🗒️ Features
 
-- TypeScript
-- ESLint (with custom ESLint rules)
-- Markdown rendering with Remark
-- Basic component structure
-- Styling with [emotion](https://emotion.sh/)
+:white_check_mark: Three.js
+:white_check_mark: TypeScript
+:white_check_mark: Gatsby
+:white_check_mark: Netlify
+:white_check_mark: TailwindCSS
+:white_check_mark: Emotion
 
 ## 🚀 Quick start
 
@@ -38,7 +39,7 @@ This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites writte
     Use the `gatsby-cli` to create a new site and install its dependencies.
 
     ```bash
-    gatsby new project-name https://github.com/resir014/gatsby-starter-typescript-plus
+    gatsby new project-name https://github.com/shunp/gatsby-three-ts-plus
     ```
 
 2.  **Start developing.**
