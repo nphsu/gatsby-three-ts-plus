@@ -1,11 +1,11 @@
 import * as React from 'react'
 
 import IndexLayout from '../layouts'
-import BaseScene from '../scenes/BaseScene'
+import CustomScene from '../scenes/CustomScene'
 
 const PageTwo = () => (
   <IndexLayout>
-    <BaseScene />
+    <CustomScene />
   </IndexLayout>
 )
 
