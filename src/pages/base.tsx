@@ -3,10 +3,10 @@ import * as React from 'react'
 import IndexLayout from '../layouts'
 import BaseScene from '../scenes/BaseScene'
 
-const PageTwo = () => (
+const BasePage = () => (
   <IndexLayout>
     <BaseScene />
   </IndexLayout>
 )
 
-export default PageTwo
+export default BasePage
