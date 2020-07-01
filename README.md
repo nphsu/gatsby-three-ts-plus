@@ -41,6 +41,12 @@ This is a 3D web starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites
     ```bash
     gatsby new project-name https://github.com/shunp/gatsby-three-ts-plus
     ```
+    
+    Or you can use this command if you are familiar with `degit`.
+    
+    ```bash
+    degit git@github.com:shunp/gatsby-three-ts-plus
+    ```
 
 2.  **Start developing.**
 
