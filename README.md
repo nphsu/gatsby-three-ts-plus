@@ -98,8 +98,9 @@ This is a 3D web starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites
     ```
 
 ## 🧐 What's inside?
-
-    A quick look at the top-level files and directories you'll see in a Gatsby project.
+    
+A quick look at the top-level files and directories you'll see in a Gatsby project.
+    
     
     ```
     .
@@ -141,6 +142,78 @@ This is a 3D web starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
+
+## Scene
+
+You can find a simple scene at `src/scenes/BaseScene.tsx`. The basic components such as a `camera` and `scene` have been decleared. You can customize your scene as you want, referencing other scenes placed on the same directry.
+
+```tsx
+import React, { useEffect, createRef } from 'react'
+import * as THREE from 'three'
+import { css } from '@emotion/core'
+
+const newScene = () => {
+  const scene = new THREE.Scene()
+  return scene
+}
+
+const newCamera = () => {
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+  camera.position.x = 100
+  camera.position.y = 100
+  camera.position.z = 400
+  return camera
+}
+
+const newRenderer = (mount: React.RefObject<HTMLInputElement>) => {
+  const renderer = new THREE.WebGLRenderer({ antialias: true })
+  renderer.setPixelRatio(window.devicePixelRatio)
+  renderer.setSize(window.innerWidth, window.innerHeight)
+  renderer.autoClear = true
+  if (mount.current) {
+    mount.current.appendChild(renderer.domElement)
+  }
+  return renderer
+}
+
+const BaseScene = () => {
+  const mount = createRef<HTMLInputElement>()
+  useEffect(() => {
+    // scene
+    const scene = newScene()
+
+    // camera
+    const camera = newCamera()
+
+    // renderer
+    const renderer = newRenderer(mount)
+
+    // mesh
+    const geometry = new THREE.BoxGeometry(50, 50, 50)
+    const material = new THREE.MeshNormalMaterial()
+    const mesh = new THREE.Mesh(geometry, material)
+    scene.add(mesh)
+
+    // render
+    const render = () => {
+      renderer.render(scene, camera)
+    }
+
+    // animation
+    const animate = () => {
+      requestAnimationFrame(animate)
+      render()
+    }
+    animate()
+  }, [])
+  return (
+    <>
+      <div css={css``} ref={mount} />
+    </>
+  )
+}
+export default BaseScene
+```
 
 ## ❤️ Credits
 
