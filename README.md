@@ -143,7 +143,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## Scene
+## :earth_asia: Scene
 
 You can find a simple scene at `src/scenes/BaseScene.tsx`. The basic components such as a `camera` and `scene` have been decleared. You can customize your scene as you want, referencing other scenes placed on the same directry.
 
